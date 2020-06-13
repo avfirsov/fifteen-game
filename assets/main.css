@@ -7,6 +7,18 @@ body {
   overflow: hidden;
 }
 
+#github-link {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+#github-link:hover {
+  opacity: 1;
+}
+
 #game {
   margin: 100px auto;
   width: 600px;
