@@ -77,7 +77,7 @@ new (function () {
     //если решено - показываем результат
     const time = Math.round(((Date.now() - this.beginTime) / 1000) * 100) / 100;
     const score = Math.round(1000000 / (time * this.counter) / 1000) * 1000;
-    const str = `Время: ${time}с, ходов: ${this.counter}. Очков: ${score}.`;
+    const str = `Time: ${time}с, moves: ${this.counter}. Score: ${score}.`;
 
     setTimeout(() => shade(str), 200);
   }
@@ -155,7 +155,7 @@ new (function () {
     notif.style.left = (document.body.offsetWidth - notif.offsetWidth) / 2 + 'px';
     notif.style.top = (document.body.offsetHeight - notif.offsetHeight) / 2 + 'px';
 
-    notif.innerHTML = `<h2>Поздравляем!<br>Ваш результат:</h2><p>${str}</p><input type="button" value="Ок"></input>`;
+    notif.innerHTML = `<h2>Congratulations!<br>Your score:</h2><p>${str}</p><input type="button" value="Ок"></input>`;
     shader.onclick = hide;
     notif.querySelector('input').onclick = hide;
 
