@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+#game {
+  margin: 100px auto;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+#game .game-controls {
+  flex-direction: column;
+}
+
+#game input {
+  margin-top: 30px;
+  width: 440px;
+  height: 60px;
+  cursor: pointer;
+  background-color: #84441aff;
+  border: 10px solid #592d11;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+#game textarea {
+  width: 400px;
+  height: 300px;
+  background-color: #84441aff;
+  border: 10px solid #592d11;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+#game .score {
+  margin: 30px 60px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#game h2 {
+  color: #84441aff;
+  margin-bottom: 20px;
+}
+
+.container {
+  /*margin: 100px auto;*/
+  border: 20px solid #594111ff;
+  border-radius: 30px;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.chip {
+  box-sizing: border-box;
+  border: 8px solid black;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  position: absolute;
+  background-color: white;
+  cursor: pointer;
+}
+
+.chip div {
+  margin: 0;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px;
+}
+
+.droppable {
+  /*visibility: hidden;*/
+}
+
+.shader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.notif {
+  width: 400px;
+  height: 300px;
+  background-color: #ffffff;
+  border: 10px solid #592d11;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  padding: 20px;
+}
+
+.notif * {
+  margin-top: 20px;
+}
+
+.notif input {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #84441aff;
+  border: 10px solid #592d11;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
